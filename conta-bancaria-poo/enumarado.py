@@ -1,6 +1,6 @@
-from enum import Enum
+import enum
 
 
-class Tipo(Enum):
-    PESSOA_FISICA = 1
-    PESSOA_JURIDICA = 2
+class Tipo(enum.Enum):  # 'enum.Enum' é a classe dentro do módulo
+    PESSOA_FISICA = 'PF'
+    PESSOA_JURIDICA = 'PJ'
